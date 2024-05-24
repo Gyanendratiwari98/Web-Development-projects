@@ -2,212 +2,235 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Gyanendra's Portfolio</title>
-   <link rel="stylesheet" href="/style.css">
-   <script src="https://kit.fontawesome.com/6d244422d7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanendra's Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/6d244422d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-   <div id="header">
-      <div class="container">
-         <nav>
-            <img src="img/logo.png" class="logo">
-            <ul id="sidemenu">
-               <li><a href="#header">Home</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#services">Services</a></li>
-               <li><a href="#portfolio">Portfolio</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-         </nav>
-         <div class="header-text">
-            <p>CODER</p>
-            <h1>Hi, I'm <span>Gyanendra</span><br>Tiwari From India</h1>
-         </div>
-      </div>
-   </div>
-   <div id="about">
-      <div class="container">
-         <div class="row">
-            <div class="about-col-1">
-               <img src="img/user.png">
+    <div id="custom-cursor"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo item from-left">
+                <ul id="sidemenu" class="item from-right">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text item from-top">
+                <p>CODER</p>
+                <h1>Hi, I'm <span>Gyanendra</span><br>Tiwari From India</h1>
             </div>
-            <div class="about-col-2">
-               <h1 class="sub-title">About Me</h1>
-               <p>As a passionate AIML student, I excel in C, C++, and Python development with a strong focus on Artificial Intelligence and Machine Learning. My journey as a full-stack web developer has equipped me with versatile skills. Eager to embrace new challenges, I am committed to continuous learning and leveraging innovative solutions. Excited to apply my knowledge to make a positive impact, I am keen to collaborate with like-minded professionals.
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 item from-left">
+                    <img src="img/user.png">
+                </div>
+                <div class="about-col-2 item from-right">
+                    <h1 class="sub-title item from-right">About Me</h1>
+                    <p>As a passionate AIML student, I excel in C, C++, and Python development with a strong focus on Artificial Intelligence and Machine Learning. My journey as a full-stack web developer has equipped me with versatile skills. Eager to embrace new challenges, I am committed to continuous learning and leveraging innovative solutions. Excited to apply my knowledge to make a positive impact, I am keen to collaborate with like-minded professionals.
 
-                  #AIML #Developer #ContinuousLearner</p>
-               <div class="tab-titles">
-                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                  <p class="tab-links" onclick="opentab('education')">Education</p>
-               </div>
-               <div class="tab-contents active-tab " id="skills">
-                  <ul>
-                     <li><span>Programming Languages</span><br>C , C++ , Python,DSA.....</li>
-                     <li><span>Web Development</span><br>HTML, CSS, JavaScript, Express.js, Node.js, MongoDB, and React.js. </li>
-                     <li><span>Machine Learning (ML) </span><br>Proficient in Python, including libraries such as NumPy, Pandas, TensorFlow, scikit-learn, and Matplotlib.</li>
-                  </ul>
-               </div>
-               <div class="tab-contents" id="experience">
-                  <ul>
-                     <li><span>SIH Hackathon</span><br>Finalist in the Smart India Hackathon (SIH) inter-college hackathon.</li>
-                    
-                  </ul>
-               </div>
-               <div class="tab-contents" id="education">
-                  <ul>
-                     <li><span>2022 - 2026</span><br>Current CGPA - 7.5</li>
-                     <li><span>2022</span><br>12th - 75%</li>
-                     <li><span>2020</span><br>10th - 89%</li>
-                  </ul>
-               </div>
+                        #AIML #Developer #ContinuousLearner</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C , C++ , Python,DSA.....</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Express.js, Node.js, MongoDB, and React.js. </li>
+                            <li><span>Machine Learning (ML) </span><br>Proficient in Python, including libraries such as NumPy, Pandas, TensorFlow, scikit-learn, and Matplotlib.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>SIH Hackathon</span><br>Finalist in the Smart India Hackathon (SIH) inter-college hackathon.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>Current CGPA - 7.5</li>
+                            <li><span>2022</span><br>12th - 75%</li>
+                            <li><span>2020</span><br>10th - 89%</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
 
-   </div>
-   <div id="services">
-      <div class="container">
-         <h1 class="sub-title">My Services</h1>
-         <div class="services-list">
-            <div>
-               <i class="fa-solid fa-code"></i>
-               <h2>Programming</h2>
-               <p>I specialize in creating efficient and effective programs in C, C++, and Python, utilizing data structures and algorithms to solve complex problems. With a strong foundation in DSA, I develop high-performance applications tailored to meet user needs.</p>
-               
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title item from-left">My Services</h1>
+            <div class="services-list">
+                <div class="item from-left">
+                    <i class="fa-solid fa-code "></i>
+                    <h2>Programming</h2>
+                    <p>I specialize in creating efficient and effective programs in C, C++, and Python, utilizing data structures and algorithms to solve complex problems. With a strong foundation in DSA, I develop high-performance applications tailored to meet user needs.</p>
+                </div>
+                <div class="item from-right">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>I excel in crafting responsive and dynamic websites, whether it's frontend, backend, or full-stack development. Leveraging modern technologies and best practices, I create user-centric web solutions to elevate online experiences.</p>
+                </div>
+                <div class="item from-right">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>Machine Learning (ML) </h2>
+                    <p>I am adept at harnessing the power of machine learning, utilizing NumPy and Pandas for efficient data manipulation. As I delve into new ML technologies, I craft predictive models and innovative solutions to tackle real-world challenges.</p>
+                </div>
             </div>
-            <div>
-               <i class="fa-solid fa-crop"></i>
-               <h2>Web Development</h2>
-               <p>I excel in crafting responsive and dynamic websites, whether it's frontend, backend, or full-stack development. Leveraging modern technologies and best practices, I create user-centric web solutions to elevate online experiences.</p>
-              
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title item from-left">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="item from-left" src="img/work-1.png">
+                    <div class="layer ">
+                        <h3>Web Development</h3>
+                        <p>Check out my web development projects on the following link to witness my proficiency in crafting responsive and dynamic websites. Explore a showcase of my frontend, backend, and full-stack creations, highlighting my ability to deliver compelling online experiences.</p>
+                        <a href="https://github.com/Gyanendratiwari98/Web-Development-projects"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="item from-right" src="img/work-2.png">
+                    <div class="layer ">
+                        <h3>Programming</h3>
+                        <p>Explore my programming projects on the provided link to see examples of my adeptness in crafting efficient and innovative solutions. From algorithms implemented in C, C++, and Python to data structures and algorithms challenges, discover a range of projects showcasing my programming skills.</p>
+                        <a href="https://github.com/Gyanendratiwari98/Programming"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="item from-right" src="img/work-3.png">
+                    <div class="layer ">
+                        <h3>Machine Learning (ML) </h3>
+                        <p>Discover my machine learning projects on the linked page to witness my proficiency in leveraging NumPy and Pandas for data manipulation. Explore a variety of projects showcasing my journey into new ML technologies, where I develop predictive models and data-driven solutions for diverse applications.</p>
+                        <a href="https://github.com/Gyanendratiwari98/Machine-Learning-ML-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
             </div>
-            <div>
-               <i class="fa-solid fa-code-compare"></i>
-               <h2>Machine Learning (ML) </h2>
-               <p>I am adept at harnessing the power of machine learning, utilizing NumPy and Pandas for efficient data manipulation. As I delve into new ML technologies, I craft predictive models and innovative solutions to tackle real-world challenges.</p>
-               
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left item from-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tiwari.gyanendra.9827@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9826676195</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_.gyanendra._98/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Gyanendratiwari98"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gyanendra-tiwari-920a8a254/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/My-resuma.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right item from-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <div id="portfolio">
-      <div class="container">
-         <h1 class="sub-title">My Work</h1>
-         <div class="work-list">
-            <div class="work">
-               <img src="img/work-1.png">
-               <div class="layer">
-                  <h3>Web Development</h3>
-                  <p>Check out my web development projects on the following link to witness my proficiency in crafting responsive and dynamic websites. Explore a showcase of my frontend, backend, and full-stack creations, highlighting my ability to deliver compelling online experiences.</p>
-                  <a href="https://github.com/Gyanendratiwari98/Web-Development-projects"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-               </div>
-            </div>
-            <div class="work">
-               <img src="img/work-2.png">
-               <div class="layer">
-                  <h3>Programming</h3>
-                  <p>
-                     Explore my programming projects on the provided link to see examples of my adeptness in crafting efficient and innovative solutions. From algorithms implemented in C, C++, and Python to data structures and algorithms challenges, discover a range of projects showcasing my programming skills.</p>
-                  <a href="https://github.com/Gyanendratiwari98/Programming"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-               </div>
-            </div>
-            <div class="work">
-               <img src="img/work-3.png">
-               <div class="layer">
-                  <h3>Machine Learning (ML) </h3>
-                  <p>Discover my machine learning projects on the linked page to witness my proficiency in leveraging NumPy and Pandas for data manipulation. Explore a variety of projects showcasing my journey into new ML technologies, where I develop predictive models and data-driven solutions for diverse applications.</p>
-                  <a href="https://github.com/Gyanendratiwari98/Machine-Learning-ML-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div id="contact">
-      <div class="container">
-         <div class="row">
-            <div class="contact-left">
-               <h1 class="sub-title">Contact Me</h1>
-               <p><i class="fa-solid fa-paper-plane"></i>tiwari.gyanendra.9827@gmail.com</p>
-               <p><i class="fa-solid fa-phone"></i>+91 9826676195</p>
-               <div class="social-icons">
-                  <a href="https://www.instagram.com/_.gyanendra._98/"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://github.com/Gyanendratiwari98"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/gyanendra-tiwari-920a8a254/"><i class="fa-brands fa-linkedin"></i></a>
-               </div>
-               <a href="img/My-resuma.pdf" class="btn btn2" download>Download</a>
-            </div>
-            <div class="contact-right">
-               <form name="submit-to-google-sheet">
-                  <input type="text" name="Name" placeholder="Your Name" required>
-                  <input type="email" name="Email" placeholder="Your Email" required>
-                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                  <button class="btn btn2" type="submit">Submit</button>
-               </form>
-               <span id="msg"></span>
-            </div>
-         </div>
-      </div>
-      <div class="copyright">
-         <p>Copyright @gyanendra. Made by <i class="fa-solid fa-flag"></i> Gyanendra Tiwari</p>
-      </div>
-   </div>
-   <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-         for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-         }
-         for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-         }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab");
-      }
-
-   </script>
-
-   <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-         sidemenu.style.right = "0";
-      }
-      function closemenu() {
-         sidemenu.style.right = "-200px";
-      }
-   </script>
-   <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxkZSClRAHHVdrEAwnDvCTc-ddeMa-OLDl_kDjYvcxV91JSmXaNUkoLOX8w0RqA_WnK/exec';
-      const form = document.forms['submit-to-google-sheet'];
-      const msg = document.getElementById("msg");
-      form.addEventListener('submit', e => {
-         e.preventDefault();
-         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-               if (response.ok) {
-                  msg.innerHTML = "Message sent successfully";
-                  setTimeout(() => {
-                     msg.innerHTML = "";
-                  }, 5000);
-                  form.reset();
-               } else {
-                  throw new Error('Network response was not ok.');
-               }
-            })
-            .catch(error => {
-               console.error('Error!', error.message);
-               msg.innerHTML = "An error occurred. Please try again later.";
-            });
-      });
-   </script>
-
+        </div>
+        <div class="copyright">
+            <p>Copyright @gyanendra. Made by <i class="fa-solid fa-flag"></i> Gyanendra Tiwari</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+  
+        function opentab(tabname) {
+           for (tablink of tablinks) {
+              tablink.classList.remove("active-link");
+           }
+           for (tabcontent of tabcontents) {
+              tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+  
+     </script>
+  
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+           sidemenu.style.right = "0";
+        }
+        function closemenu() {
+           sidemenu.style.right = "-200px";
+        }
+        <!-- mouse -->
+        document.addEventListener('mousemove', function(e) {
+            const cursor = document.getElementById('custom-cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+        
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxkZSClRAHHVdrEAwnDvCTc-ddeMa-OLDl_kDjYvcxV91JSmXaNUkoLOX8w0RqA_WnK/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+           e.preventDefault();
+           fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then(response => {
+                 if (response.ok) {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(() => {
+                       msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                 } else {
+                    throw new Error('Network response was not ok.');
+                 }
+              })
+              .catch(error => {
+                 console.error('Error!', error.message);
+                 msg.innerHTML = "An error occurred. Please try again later.";
+              });
+        });
+  
+  
+     </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           const observer = new IntersectionObserver(entries => {
+               entries.forEach(entry => {
+                   if (entry.isIntersecting) {
+                       entry.target.classList.add('visible');
+                   } else {
+                       entry.target.classList.remove('visible');
+                   }
+               });
+           });
+       
+           const items = document.querySelectorAll('.item');
+           items.forEach(item => {
+               observer.observe(item);
+           });
+       });
+       
+    </script>
 </body>
 
 </html>

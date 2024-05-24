@@ -14,13 +14,26 @@ body {
     background: #080808;
     color: #fff;
     font-family: "Baloo Bhai 2", sans-serif;
-    /* Fixed font-family declaration */
+    cursor: none; 
+    overflow-x: hidden;
+}
+
+
+#custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: red; /* Change to your preferred color */
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Make sure the cursor doesn't interfere with other elements */
+    transform: translate(-50%, -50%); /* Center the cursor around the pointer */
+    z-index: 9999; /* Ensure it is on top of other elements */
 }
 
 #header {
     height: 100vh;
     width: 100%;
-    background-image: url(img/background.png);
+    background-image: url(img/background.gif);
     background-size: cover;
     background-position: center;
 }
@@ -49,7 +62,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     position: relative;
 }
 
@@ -57,7 +70,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #f99318;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -74,11 +87,11 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color: #f47311;
 }
 
 #about {
@@ -88,11 +101,11 @@ nav ul li a:hover::after {
 
 .row {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .about-col-1 {
-    flex-basis: 35%
+    flex-basis: 35%;
 }
 
 .about-col-1 img {
@@ -102,24 +115,23 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+    font-size: 20px;
 }
 
 .sub-title {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 600;
     color: white;
 }
 
-
 .tab-titles {
     display: flex;
-    margin: 20px 0px 40px;
-
+    margin: 20px 0 40px;
 }
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -129,7 +141,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #f99318;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -146,8 +158,8 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #b54769;
-    font-size: 14px
+    color: #ffaa43;
+    font-size: 20px;
 }
 
 .tab-contents {
@@ -172,20 +184,19 @@ nav ul li a:hover::after {
 .services-list div {
     background-color: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
 .services-list div i {
-    font-size: 50px;
+    font-size: 55px;
     margin-bottom: 30px;
-
 }
 
 .services-list div h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -199,7 +210,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #ff004f;
+    background: #f47311;
     transform: translateY(-10px);
 }
 
@@ -225,13 +236,12 @@ nav ul li a:hover::after {
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
-
 }
 
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #f47311);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -243,27 +253,31 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 14px; /* Increased font size */
     transition: height 0.5s;
 }
 
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 24px; /* Increased font size */
 }
 
 .layer a {
     margin-top: 10px;
-    color: #ff004f;
+    color: #f47311;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px; /* Increased font size */
     line-height: 60px;
     background: #fff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .work:hover {
     transform: scale(1.1);
@@ -277,7 +291,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #f47311;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -286,7 +300,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #ff004f;
+    background: #f47311;
 }
 
 .contact-left {
@@ -299,17 +313,22 @@ nav ul li a:hover::after {
 
 .contact-left p {
     margin-top: 30px;
-}
+    font-size: 20px;
 
+}
+.contact-left>a{
+    font-size: 20px;
+}
 .contact-left p i {
-    color: #ff004f;
+    color: #f47311;
     margin-right: 15px;
     font-size: 25px;
 }
 
 .social-icons a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
+    margin-top: 5px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
@@ -317,13 +336,13 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #ff004f;
+    color: #f47311;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #ff004f;
+    background: #f47311;
 }
 
 .contact-right form {
@@ -339,14 +358,13 @@ form textarea {
     padding: 15px;
     margin: 15px 0;
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     border-radius: 6px;
-
 }
 
 form .btn2 {
     padding: 14px 60px;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -358,20 +376,25 @@ form .btn2 {
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
-
 }
 
 .copyright i {
-    color: #ff004f;
+    color: #ff0c59;
 }
 
 nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width:600px) {
+
+@media only screen and (max-width: 600px) {
+  
     #header {
         background-image: url(img/phone-background.png);
+    }
+    .container {
+        padding: 10px 5%;
+        overflow-x: hidden;
     }
 
     .header-text {
@@ -389,7 +412,7 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #ff004f;
+        background: #f47311;
         position: fixed;
         top: 0;
         right: -200px;
@@ -398,6 +421,8 @@ nav .fa-solid {
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        display: flex;
+        flex-direction: column;
     }
 
     nav ul li {
@@ -409,13 +434,11 @@ nav .fa-solid {
         top: 25px;
         left: 25px;
         cursor: pointer;
-        
     }
 
     .row {
         flex-direction: column;
         align-items: center;
-        /* Align items vertically */
     }
 
     .sub-title {
@@ -451,7 +474,36 @@ nav .fa-solid {
 }
 
 #msg {
-    color: #61b752;
+    color: #65e54e;
     margin-top: -40px;
     display: block;
+}
+
+.item {
+    
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Direction-based classes */
+.item.from-left {
+    transform: translateX(-100%);
+}
+
+.item.from-right {
+    transform: translateX(100%);
+}
+
+.item.from-top {
+    transform: translateY(-100%);
+}
+
+.item.from-bottom {
+    transform: translateY(100%);
+}
+
+/* Animation class */
+.item.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
 }
