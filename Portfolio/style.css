@@ -22,12 +22,23 @@ body {
 #custom-cursor {
     width: 20px;
     height: 20px;
-    background-color: red; /* Change to your preferred color */
-    border-radius: 50%;
     position: absolute;
     pointer-events: none; /* Make sure the cursor doesn't interfere with other elements */
     transform: translate(-50%, -50%); /* Center the cursor around the pointer */
     z-index: 9999; /* Ensure it is on top of other elements */
+    background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
+    border-radius: 50%;
+    animation: anime 2s linear infinite;
+    
+}
+
+@keyframes anime {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #header {
